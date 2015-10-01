@@ -1,2 +1,8 @@
 # echo ape
-
+#
+# wget --spider -o wget.log -e robots=off -w 1 -r -p http://www.digitalinfrastructures.nl                             
+# grep 404 wget.log
+# grep -B 2 '404' wget.log
+# watch out, wget creates these files.....
+# wget --spider -o wget.log -e robots=off -r -p https://diginfra-website-pve.c9.io/index.html
+#

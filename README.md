@@ -11,12 +11,11 @@ Publishing through codeship.io using aws/codeship credentials
 Delivery: S3 and CloudFront
 http://staging-digitalinfra.nl.s3-website-us-east-1.amazonaws.com/publicaties/index.html
 
-issues: kunnen we nog een broken link check inbouwen 
-
 How to do this:
+```
 wget -mk --adjust-extension --no-host-directories http://www.digitalinfrastructures.nl 
 git add *
 git commit -m "initial upload" 
 git push
-
+```
 Then you need a deployment service such as codeship.io that pulls this out of github and pushes it to S3
